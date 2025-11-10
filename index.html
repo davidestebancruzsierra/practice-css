@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa de CSS - Aprende CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎨 Guía Completa de CSS</h1>
+        <p>Explora todas las secciones principales de CSS con ejemplos prácticos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#selectores">Selectores</a></li>
+            <li><a href="#texto">Texto y Tipografía</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#posicionamiento">Posicionamiento</a></li>
+            <li><a href="#flexbox">Flexbox</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#colores">Colores y Fondos</a></li>
+            <li><a href="#bordes">Bordes y Sombras</a></li>
+            <li><a href="#transiciones">Transiciones</a></li>
+            <li><a href="#animaciones">Animaciones</a></li>
+            <li><a href="#transformaciones">Transformaciones</a></li>
+            <li><a href="#variables">Variables CSS</a></li>
+            <li><a href="#media-queries">Media Queries</a></li>
+            <li><a href="#pseudo-clases">Pseudo-clases</a></li>
+            <li><a href="#pseudo-elementos">Pseudo-elementos</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Sección: Selectores -->
+        <section id="selectores" class="section">
+            <h2>1. Selectores CSS</h2>
+            <p>Los selectores definen qué elementos HTML se estilizarán.</p>
+            
+            <div class="example">
+                <h3>Tipos de Selectores:</h3>
+                <div class="selector-example">
+                    <p class="selector-elemento">Selector de elemento (p)</p>
+                    <p id="selector-id">Selector de ID (#id)</p>
+                    <p class="selector-clase">Selector de clase (.clase)</p>
+                    <div class="selector-descendiente">
+                        <p>Selector descendiente (div p)</p>
+                    </div>
+                    <p class="selector-hijo-directo">Selector hijo directo (div > p)</p>
+                    <p class="selector-hermano">Selector hermano adyacente (p + p)</p>
+                    <p class="selector-hermano-general">Selector hermano general (p ~ p)</p>
+                    <p class="selector-atributo">Selector de atributo [type="text"]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Texto y Tipografía -->
+        <section id="texto" class="section">
+            <h2>2. Texto y Tipografía</h2>
+            <p>Propiedades para controlar la apariencia del texto.</p>
+            
+            <div class="example">
+                <h3>Propiedades de Texto:</h3>
+                <p class="texto-color">color: Define el color del texto</p>
+                <p class="texto-tamano">font-size: Controla el tamaño de la fuente</p>
+                <p class="texto-familia">font-family: Define la familia tipográfica</p>
+                <p class="texto-peso">font-weight: Controla el grosor (bold, normal, 100-900)</p>
+                <p class="texto-estilo">font-style: Estilo (italic, normal, oblique)</p>
+                <p class="texto-decoracion">text-decoration: Subrayado, tachado, etc.</p>
+                <p class="texto-transformacion">text-transform: MAYÚSCULAS, minúsculas, Capitalizado</p>
+                <p class="texto-alineacion">text-align: Alineación del texto (left, center, right, justify)</p>
+                <p class="texto-interlineado">line-height: Altura de línea para mejorar la legibilidad</p>
+                <p class="texto-espaciado">letter-spacing: Espaciado entre letras</p>
+                <p class="texto-sombra">text-shadow: Sombra del texto (x y blur color)</p>
+            </div>
+        </section>
+
+        <!-- Sección: Box Model -->
+        <section id="box-model" class="section">
+            <h2>3. Box Model (Modelo de Caja)</h2>
+            <p>Cada elemento HTML es una caja con margin, border, padding y content.</p>
+            
+            <div class="example">
+                <h3>Componentes del Box Model:</h3>
+                <div class="box-model-demo">
+                    <div class="box-margin">
+                        <div class="box-border">
+                            <div class="box-padding">
+                                <div class="box-content">
+                                    Content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-properties">
+                    <div class="box-width">width: Ancho del contenido</div>
+                    <div class="box-height">height: Alto del contenido</div>
+                    <div class="box-padding-demo">padding: Espacio interno</div>
+                    <div class="box-margin-demo">margin: Espacio externo</div>
+                    <div class="box-border-demo">border: Borde alrededor del padding</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Posicionamiento -->
+        <section id="posicionamiento" class="section">
+            <h2>4. Posicionamiento</h2>
+            <p>Controla cómo se posicionan los elementos en la página.</p>
+            
+            <div class="example">
+                <h3>Tipos de Posicionamiento:</h3>
+                <div class="position-container">
+                    <div class="pos-static">static (por defecto)</div>
+                    <div class="pos-relative">relative (relativo a su posición normal)</div>
+                    <div class="pos-absolute">absolute (relativo al contenedor posicionado más cercano)</div>
+                    <div class="pos-fixed">fixed (relativo al viewport, siempre visible)</div>
+                    <div class="pos-sticky">sticky (se pega al hacer scroll)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Flexbox -->
+        <section id="flexbox" class="section">
+            <h2>5. Flexbox</h2>
+            <p>Sistema de diseño unidimensional para distribuir espacio y alinear elementos.</p>
+            
+            <div class="example">
+                <h3>Flexbox en Acción:</h3>
+                <div class="flex-container">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                    <div class="flex-item">Item 4</div>
+                </div>
+                <div class="flex-container-column">
+                    <div class="flex-item">Item A</div>
+                    <div class="flex-item">Item B</div>
+                    <div class="flex-item">Item C</div>
+                </div>
+                <div class="flex-container-center">
+                    <div class="flex-item">Centrado</div>
+                </div>
+                <div class="flex-container-space">
+                    <div class="flex-item">Espaciado</div>
+                    <div class="flex-item">Entre</div>
+                    <div class="flex-item">Elementos</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Grid -->
+        <section id="grid" class="section">
+            <h2>6. CSS Grid</h2>
+            <p>Sistema de diseño bidimensional para crear layouts complejos.</p>
+            
+            <div class="example">
+                <h3>Grid Layout:</h3>
+                <div class="grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class="grid-container-template">
+                    <div class="grid-header">Header</div>
+                    <div class="grid-sidebar">Sidebar</div>
+                    <div class="grid-main">Main Content</div>
+                    <div class="grid-footer">Footer</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Colores y Fondos -->
+        <section id="colores" class="section">
+            <h2>7. Colores y Fondos</h2>
+            <p>Controla los colores y fondos de los elementos.</p>
+            
+            <div class="example">
+                <h3>Propiedades de Color y Fondo:</h3>
+                <div class="color-examples">
+                    <div class="color-hex">Color HEX (#ff5733)</div>
+                    <div class="color-rgb">Color RGB (rgb(52, 152, 219))</div>
+                    <div class="color-rgba">Color RGBA (rgba(155, 89, 182, 0.7))</div>
+                    <div class="color-hsl">Color HSL (hsl(120, 100%, 50%))</div>
+                </div>
+                <div class="background-examples">
+                    <div class="bg-color">background-color</div>
+                    <div class="bg-image">background-image</div>
+                    <div class="bg-repeat">background-repeat</div>
+                    <div class="bg-position">background-position</div>
+                    <div class="bg-size">background-size</div>
+                    <div class="bg-gradient">background: linear-gradient</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Bordes y Sombras -->
+        <section id="bordes" class="section">
+            <h2>8. Bordes y Sombras</h2>
+            <p>Estiliza los bordes y añade sombras a los elementos.</p>
+            
+            <div class="example">
+                <h3>Bordes y Sombras:</h3>
+                <div class="border-examples">
+                    <div class="border-solid">border: solid</div>
+                    <div class="border-dashed">border: dashed</div>
+                    <div class="border-dotted">border: dotted</div>
+                    <div class="border-double">border: double</div>
+                    <div class="border-radius">border-radius (esquinas redondeadas)</div>
+                    <div class="box-shadow">box-shadow (sombra de caja)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Transiciones -->
+        <section id="transiciones" class="section">
+            <h2>9. Transiciones</h2>
+            <p>Anima los cambios de propiedades CSS de forma suave.</p>
+            
+            <div class="example">
+                <h3>Transiciones:</h3>
+                <div class="transition-examples">
+                    <div class="transition-color">Hover para cambiar color</div>
+                    <div class="transition-transform">Hover para escalar</div>
+                    <div class="transition-width">Hover para cambiar ancho</div>
+                    <div class="transition-opacity">Hover para cambiar opacidad</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Animaciones -->
+        <section id="animaciones" class="section">
+            <h2>10. Animaciones</h2>
+            <p>Crea animaciones complejas usando @keyframes.</p>
+            
+            <div class="example">
+                <h3>Animaciones:</h3>
+                <div class="animation-examples">
+                    <div class="animation-rotate">Rotación continua</div>
+                    <div class="animation-bounce">Rebote</div>
+                    <div class="animation-pulse">Pulso</div>
+                    <div class="animation-slide">Deslizamiento</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Transformaciones -->
+        <section id="transformaciones" class="section">
+            <h2>11. Transformaciones</h2>
+            <p>Transforma elementos en 2D y 3D.</p>
+            
+            <div class="example">
+                <h3>Transformaciones:</h3>
+                <div class="transform-examples">
+                    <div class="transform-rotate">rotate(45deg)</div>
+                    <div class="transform-scale">scale(1.2)</div>
+                    <div class="transform-translate">translate(20px, 10px)</div>
+                    <div class="transform-skew">skew(20deg)</div>
+                    <div class="transform-3d">transform 3D</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Variables CSS -->
+        <section id="variables" class="section">
+            <h2>12. Variables CSS (Custom Properties)</h2>
+            <p>Define valores reutilizables que puedes usar en todo tu CSS.</p>
+            
+            <div class="example">
+                <h3>Variables CSS:</h3>
+                <div class="variable-examples">
+                    <div class="var-primary">Color primario (variable)</div>
+                    <div class="var-secondary">Color secundario (variable)</div>
+                    <div class="var-spacing">Espaciado con variable</div>
+                    <div class="var-font">Fuente con variable</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Media Queries -->
+        <section id="media-queries" class="section">
+            <h2>13. Media Queries (Diseño Responsivo)</h2>
+            <p>Aplica estilos diferentes según el tamaño de pantalla.</p>
+            
+            <div class="example">
+                <h3>Media Queries:</h3>
+                <div class="media-query-demo">
+                    <p>Este diseño se adapta según el tamaño de pantalla:</p>
+                    <ul>
+                        <li>📱 Móvil: &lt; 768px</li>
+                        <li>📱 Tablet: 768px - 1024px</li>
+                        <li>💻 Desktop: &gt; 1024px</li>
+                    </ul>
+                    <div class="responsive-grid">
+                        <div class="responsive-item">Item 1</div>
+                        <div class="responsive-item">Item 2</div>
+                        <div class="responsive-item">Item 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Pseudo-clases -->
+        <section id="pseudo-clases" class="section">
+            <h2>14. Pseudo-clases</h2>
+            <p>Estiliza elementos en estados específicos.</p>
+            
+            <div class="example">
+                <h3>Pseudo-clases Comunes:</h3>
+                <div class="pseudo-class-examples">
+                    <a href="#" class="pseudo-hover">:hover - Al pasar el mouse</a>
+                    <a href="#" class="pseudo-active">:active - Al hacer clic</a>
+                    <a href="#" class="pseudo-visited">:visited - Enlaces visitados</a>
+                    <input type="text" class="pseudo-focus" placeholder=":focus - Al enfocar">
+                    <div class="pseudo-first-child">:first-child - Primer hijo</div>
+                    <div class="pseudo-last-child">:last-child - Último hijo</div>
+                    <div class="pseudo-nth-child">:nth-child(2n) - Cada segundo elemento</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Pseudo-elementos -->
+        <section id="pseudo-elementos" class="section">
+            <h2>15. Pseudo-elementos</h2>
+            <p>Estiliza partes específicas de un elemento.</p>
+            
+            <div class="example">
+                <h3>Pseudo-elementos:</h3>
+                <div class="pseudo-element-examples">
+                    <p class="pseudo-before">::before - Contenido antes</p>
+                    <p class="pseudo-after">::after - Contenido después</p>
+                    <p class="pseudo-first-line">::first-line - Primera línea de texto. Este párrafo tiene varias líneas para demostrar cómo funciona el pseudo-elemento ::first-line que estiliza solo la primera línea del texto.</p>
+                    <p class="pseudo-first-letter">::first-letter - Primera letra. Este párrafo muestra cómo se puede estilizar la primera letra de manera especial.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Imágenes -->
+        <section id="imagenes" class="section">
+            <h2>16. Imágenes en CSS</h2>
+            <p>Aprende a trabajar con imágenes en HTML y CSS.</p>
+            
+            <div class="example">
+                <h3>Imágenes como Elementos HTML:</h3>
+                <div class="imagenes-examples">
+                    <div class="imagen-container">
+                        <img src="imagenes/ejemplo1.jpg" alt="Ejemplo de imagen 1" class="imagen-basica">
+                        <p>Imagen básica con etiqueta &lt;img&gt;</p>
+                    </div>
+                    
+                    <div class="imagen-container">
+                        <img src="imagenes/ejemplo2.jpg" alt="Ejemplo de imagen 2" class="imagen-redondeada">
+                        <p>Imagen con bordes redondeados</p>
+                    </div>
+                    
+                    <div class="imagen-container">
+                        <img src="imagenes/ejemplo3.jpg" alt="Ejemplo de imagen 3" class="imagen-sombra">
+                        <p>Imagen con sombra</p>
+                    </div>
+                    
+                    <div class="imagen-container">
+                        <img src="imagenes/ejemplo4.jpg" alt="Ejemplo de imagen 4" class="imagen-hover">
+                        <p>Imagen con efecto hover</p>
+                    </div>
+                </div>
+
+                <h3>Imágenes de Fondo con CSS:</h3>
+                <div class="background-images-examples">
+                    <div class="bg-img-cover">background-size: cover</div>
+                    <div class="bg-img-contain">background-size: contain</div>
+                    <div class="bg-img-repeat">background-repeat: repeat</div>
+                    <div class="bg-img-no-repeat">background-repeat: no-repeat</div>
+                </div>
+
+                <h3>Galería de Imágenes:</h3>
+                <div class="galeria">
+                    <img src="imagenes/galeria1.jpg" alt="Galería 1" class="galeria-item">
+                    <img src="imagenes/galeria2.jpg" alt="Galería 2" class="galeria-item">
+                    <img src="imagenes/galeria3.jpg" alt="Galería 3" class="galeria-item">
+                    <img src="imagenes/galeria4.jpg" alt="Galería 4" class="galeria-item">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>✨ Guía completa de CSS - Aprende todos los conceptos fundamentales</p>
+        <p>Creado para ayudarte a dominar CSS desde cero</p>
+    </footer>
+</body>
+</html>
